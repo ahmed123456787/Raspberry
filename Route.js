@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { gas } = require("./controll");
+const { prise , gas , temp  ,light } = require("./controll");
 
 router.route("/gas").post(gas);
 router.route("/light").post(light);
