@@ -17,7 +17,7 @@ app.get('/connect', (req, res) => {
  
 const wss = new WebSocket.Server({ port: 8080 });
 wss.on('connection', (ws) => { 
-  console.log('ServerB connected');
+  console.log('Server rasb connected');
   ws.onmessage = (message) => {
     console.log('Received message from  APP server :', message.data);
     // Process message and potentially send responses through the WebSocket
